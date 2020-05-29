@@ -14,11 +14,11 @@ opencv-python 4.1.2.30
 
 ## Usage Guideline
 
-- `dataset.py` defines how the program will receive the data. Use the `ColonDataset` as template and modify the internal logic accordingly to adapt to your data.
+- `dataset.py` defines how the program will receive the data. Use the `ColonDataset` class defined within as template and modify the internal logic accordingly to adapt to your data.
 - `config.py` contains the general running configuration (#thread, saving locations), for the network running options, please refer to `model/opt.py`
 - `trainer.py` and `inferer.py` are the running scripts accordingly.
 - `stats/get_patch_stat.py` contains the code for calculation of all statistics reported in the paper. 
-- `plots.py` is script to plot/parse the .npy output by inferer.py to figure.
+- `plots.py` is script to plot/parse the .npy output by `inferer.py` to figure.
 
 ## Citation
 
